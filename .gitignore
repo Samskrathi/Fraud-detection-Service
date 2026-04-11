@@ -1,0 +1,13 @@
+.gradle/
+build/
+*/build/
+out/
+
+.idea/
+*.iml
+.DS_Store
+
+*.log
+java_pid*
+
+target/

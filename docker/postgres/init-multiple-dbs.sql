@@ -1,0 +1,2 @@
+CREATE DATABASE frauddb;
+CREATE DATABASE orderdb;

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: order-processor-config
+  namespace: kafka-app
+data:
+  SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/orderdb
+  SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+  SPRING_KAFKA_CONSUMER_GROUP_ID: order-processor-group
+  APP_KAFKA_INPUT_TOPIC: orders
+  APP_KAFKA_OUTPUT_TOPIC: fraud-results
